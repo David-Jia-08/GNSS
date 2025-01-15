@@ -1,0 +1,48 @@
+GPSDO锁定到gps卫星
+GPS_GPGGA: $GPGGA,115447.00,4002.1907,N,11620.3975,E,2,08,1.4,53.9,M,-8.7,M,,*48 
+GPS_GPRMC: $GPRMC,115447.00,A,4002.1907,N,11620.3975,E,0.0,0.0,240423,,*37 
+USRP锁定参考时钟！
+成功同步usrp到gpsdo
+设置接收开始时间为：1682337294    0.0175264750
+set_min_output_buffer on block 1 to 5000000
+
+----------------------------------------------------------------------
+Tag Debug: 
+Input Stream: 00
+  Offset: 0  Source: usrp_source1     Key: rx_time   Value: {1682337294 0.01753485000000000113}
+
+
+
+
+yafeng@yafeng-ThinkPad-T490:~/Desktop/gr-rssdr-usrp-gpsdo/apps$ python USRP_B210_GPSDO.py
+[INFO] [UHD] linux; GNU C++ version 9.2.1 20200304; Boost_107100; UHD_3.15.0.0-2build5
+[INFO] [B200] Detected Device: B210
+[INFO] [B200] Operating over USB 3.
+[INFO] [B200] Detecting internal GPSDO.... 
+[INFO] [GPS] Found an internal GPSDO: GPSTCXO, Firmware Rev 0.929b
+[INFO] [B200] Initialize CODEC control...
+[INFO] [B200] Initialize Radio control...
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Performing register loopback test... 
+[INFO] [B200] Register loopback test passed
+[INFO] [B200] Setting master clock rate selection to 'automatic'.
+[INFO] [B200] Asking for clock rate 16.000000 MHz... 
+[INFO] [B200] Actually got clock rate 16.000000 MHz.
+[INFO] [B200] Asking for clock rate 40.000000 MHz... 
+[INFO] [B200] Actually got clock rate 40.000000 MHz.
+GPSDO锁定到gps卫星
+GPS_GPGGA: $GPGGA,115447.00,4002.1907,N,11620.3975,E,2,08,1.4,53.9,M,-8.7,M,,*48 
+GPS_GPRMC: $GPRMC,115447.00,A,4002.1907,N,11620.3975,E,0.0,0.0,240423,,*37 
+USRP锁定参考时钟！
+成功同步usrp到gpsdo
+设置接收开始时间为：1682337294    0.0175264750
+set_min_output_buffer on block 1 to 5000000
+
+----------------------------------------------------------------------
+Tag Debug: 
+Input Stream: 00
+  Offset: 0  Source: usrp_source1     Key: rx_time   Value: {1682337294 0.01753485000000000113}
+----------------------------------------------------------------------
+yafeng@yafeng-ThinkPad-T490:~/Desktop/gr-rssdr-usrp-gpsdo/apps$ 
+
