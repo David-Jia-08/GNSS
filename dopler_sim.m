@@ -15,7 +15,7 @@ relative_velocity = dot(sat_ecef_vel, los_unit); % m/s
 % 信号频率 (例如 GPS)
 f0 = settings.f; % Hz
 % 多普勒频移
-doppler_shift(1,i) = relative_velocity / c * f0+f0+1e2*randn;
+doppler_shift(1,i) = relative_velocity / c * f0+f0+1e1*randn;
 % 显示结果
 end
 disp(['多普勒频移: ', num2str(doppler_shift-f0), ' Hz']);
